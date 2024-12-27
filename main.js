@@ -2,7 +2,6 @@ let BASE_URL = "https://api.escuelajs.co/api/v1/auth/login";
 let form = document.querySelector("#form");
 let login = document.querySelector(".btn");
 
-// let num = localStorage.setItem("access_token","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImlhdCI6MTY3Mjc2NjAyOCwiZXhwIjoxNjc0NDk0MDI4fQ.kCak9sLJr74frSRVQp0_27BY4iBCgQSmoT3vQVWKzJg")
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -29,6 +28,6 @@ form.addEventListener("submit", (e) => {
 function check(data) {
     if (data.status !== 401) {
         window.location.href = "./index.html";
-        
+
     }
 }
